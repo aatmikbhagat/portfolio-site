@@ -18,7 +18,7 @@ function App() {
           title="Personal Portfolio"
           description="This portfolio website, designed with Tailwind and React."
           tech={["React", "Tailwind"]}
-          link="https://github.com/yourusername/portfolio-site"
+          link="https://github.com/aatmikbhagat/portfolio-site"
         />
         <ProjectCard
           title="Stock Tracker"
