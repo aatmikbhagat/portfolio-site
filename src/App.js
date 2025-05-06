@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import ProjectCard from './components/ProjectCard';
+import About from "./components/About"
+import WorkTabs from './components/WorkTabs';
+import Certifications from './components/Certifications';
+import CertificationCard from './components/CertificationCard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-900 text-white">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects>
+        <ProjectCard
+          title="Personal Portfolio"
+          description="This portfolio website, designed with Tailwind and React."
+          tech={["React", "Tailwind"]}
+          link="https://github.com/yourusername/portfolio-site"
+        />
+        <ProjectCard
+          title="Stock Tracker"
+          description="A responsive app to search and track live stock prices with real-time charting."
+          tech={["React", "Yahoo Finance API", "HTML", "CSS"]}
+          link="https://github.com/aatmikbhagat/stock_website"
+        />
+      </Projects>
+      <WorkTabs />
+      <Certifications>
+        <CertificationCard
+        title="Learning Java 11"
+        issuer="LinkedIn"
+        date="Oct. 2024"
+        certificateUrl="/certificates/Aatmik Bhagat - LinkedIn Learning Java 11 Certification.pdf"
+        />
+        <CertificationCard
+        title="Python Essential Training"
+        issuer="LinkedIn"
+        date="Oct. 2024"
+        certificateUrl="/certificates/Aatmik Bhagat - LinkedIn Learning Python Essential Training.pdf"
+        />
+      </Certifications>
     </div>
   );
 }
