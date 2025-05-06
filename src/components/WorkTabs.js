@@ -27,7 +27,7 @@ const jobs = [
     id: 2,
     company: "Farm Boy Inc.",
     role: "Customer Sales Representative",
-    date: "Jun. 2022 - Sept. 2023",
+    date: "Jun. 2022 - Sept. 2022",
     bullets: [
         "Learned to identify customer needs or desires to recommend the appropriate product or service",
         "Worked with colleagues to resolve customer complaints",
