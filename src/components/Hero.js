@@ -23,7 +23,7 @@ import { FaLinkedin, FaEnvelope } from "react-icons/fa";
           </a>
 
           <a
-            href="/resume.pdf"
+            href="Aatmik Bhagat Co-op Resume Submission.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition"

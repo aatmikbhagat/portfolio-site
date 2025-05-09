@@ -41,6 +41,12 @@ function App() {
         date="Oct. 2024"
         certificateUrl="/certificates/Aatmik Bhagat - LinkedIn Learning Python Essential Training.pdf"
         />
+        <CertificationCard
+        title="Databricks Accredited Generative AI Fundamentals"
+        issuer="Databricks"
+        date="May 2025"
+        certificateUrl="/certificates/Aatmik Bhagat - Databricks Accredited Generative AI Fundamentals Certificate.pdf"
+        />
       </Certifications>
     </div>
   );
