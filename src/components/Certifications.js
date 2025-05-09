@@ -13,17 +13,13 @@ export default function Certifications({ children }) {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-12">Certifications</h2>
 
-        {/* Arrows + Card Container */}
         <div className="flex items-center justify-center gap-6">
-          {/* Left Arrow */}
           <button
             onClick={prev}
             className="bg-gray-700 hover:bg-blue-600 p-2 rounded-full"
           >
             <FaChevronLeft />
           </button>
-
-          {/* Fixed-size Card Container */}
           <div className="w-[500px] min-h-[300px] flex items-center justify-center">
             <div
               key={active}
@@ -33,7 +29,6 @@ export default function Certifications({ children }) {
             </div>
           </div>
 
-          {/* Right Arrow */}
           <button
             onClick={next}
             className="bg-gray-700 hover:bg-blue-600 p-2 rounded-full"
@@ -42,7 +37,6 @@ export default function Certifications({ children }) {
           </button>
         </div>
 
-        {/* Bubble Indicators */}
         <div className="flex justify-center mt-6 space-x-3">
           {cards.map((_, index) => (
             <button
