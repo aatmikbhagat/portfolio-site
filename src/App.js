@@ -17,19 +17,19 @@ function App() {
         <ProjectCard
           title="Personal Portfolio"
           description="This portfolio website, designed with Tailwind and React."
-          tech={["React", "Tailwind"]}
+          tech={["React", "JavaScript", "Tailwind CSS"]}
           link="https://github.com/aatmikbhagat/portfolio-site"
         />
         <ProjectCard
           title="Stock Website"
           description="A responsive app to search and track live stock prices with real-time charting."
-          tech={["React", "Yahoo Finance API", "HTML", "CSS"]}
+          tech={["Flask", "Yahoo Finance API", "HTML", "CSS"]}
           link="https://github.com/aatmikbhagat/stock-website"
         />
         <ProjectCard
           title="Finance Tracker"
           description="A full-stack finance tracker app that lets users record, categorize, and view their income and expenses, built with React, Node.js, Express, and MongoDB."
-          tech={["React", "MongoDB", "Typescript", "Axios", "Node.js", "CORS"]}
+          tech={["React", "MongoDB", "TypeScript", "Axios", "Node.js", "CORS"]}
           link="https://github.com/aatmikbhagat/finance-tracker"
         />
       </Projects>
