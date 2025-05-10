@@ -21,14 +21,32 @@ function App() {
           link="https://github.com/aatmikbhagat/portfolio-site"
         />
         <ProjectCard
-          title="Stock Tracker"
+          title="Stock Website"
           description="A responsive app to search and track live stock prices with real-time charting."
           tech={["React", "Yahoo Finance API", "HTML", "CSS"]}
           link="https://github.com/aatmikbhagat/stock-website"
         />
+        <ProjectCard
+          title="Finance Tracker"
+          description="A full-stack finance tracker app that lets users record, categorize, and view their income and expenses, built with React, Node.js, Express, and MongoDB."
+          tech={["React", "MongoDB", "Typescript", "Axios", "Node.js", "CORS"]}
+          link="https://github.com/aatmikbhagat/finance-tracker"
+        />
       </Projects>
       <WorkTabs />
       <Certifications>
+        <CertificationCard
+        title="Databricks Accredited Generative AI Fundamentals"
+        issuer="Databricks"
+        date="May 2025"
+        certificateUrl="/certificates/Aatmik Bhagat - Databricks Accredited Generative AI Fundamentals Certificate.pdf"
+        />
+        <CertificationCard
+        title="C Programming Foundations"
+        issuer="LinkedIn"
+        date="May 2025"
+        certificateUrl="/certifications/Aatmik Bhagat - LinkedIn Learning C Programming Foundations.pdf"
+        />
         <CertificationCard
         title="Learning Java 11"
         issuer="LinkedIn"
@@ -41,12 +59,7 @@ function App() {
         date="Oct. 2024"
         certificateUrl="/certificates/Aatmik Bhagat - LinkedIn Learning Python Essential Training.pdf"
         />
-        <CertificationCard
-        title="Databricks Accredited Generative AI Fundamentals"
-        issuer="Databricks"
-        date="May 2025"
-        certificateUrl="/certificates/Aatmik Bhagat - Databricks Accredited Generative AI Fundamentals Certificate.pdf"
-        />
+        
       </Certifications>
     </div>
   );
