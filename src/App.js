@@ -24,7 +24,7 @@ function App() {
           title="Stock Tracker"
           description="A responsive app to search and track live stock prices with real-time charting."
           tech={["React", "Yahoo Finance API", "HTML", "CSS"]}
-          link="https://github.com/aatmikbhagat/stock_website"
+          link="https://github.com/aatmikbhagat/stock-website"
         />
       </Projects>
       <WorkTabs />
