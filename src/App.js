@@ -45,7 +45,7 @@ function App() {
         title="C Programming Foundations"
         issuer="LinkedIn"
         date="May 2025"
-        certificateUrl="/certifications/Aatmik Bhagat - LinkedIn Learning C Programming Foundations.pdf"
+        certificateUrl="/certificates/Aatmik Bhagat - LinkedIn Learning C Programming Foundations.pdf"
         />
         <CertificationCard
         title="Learning Java 11"
