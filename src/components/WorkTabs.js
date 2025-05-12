@@ -4,7 +4,7 @@ const jobs = [
   {
     id: 0,
     company: "Laurier CyberSecurity",
-    role: "Web Developer",
+    role: "Project Developer",
     date: "Sept. 2024 – Present",
     bullets: [
       "Worked in a team to create and maintain LCIC website",
@@ -15,7 +15,7 @@ const jobs = [
   {
     id: 1,
     company: "SoakNScrub",
-    role: "Window Cleaner",
+    role: "Field Service Technician",
     date: "Jun. 2023 – Aug. 2024",
     bullets: [
         "Cleaned residential and commercial windows, delivering streak-free results with industry-standard tools",
