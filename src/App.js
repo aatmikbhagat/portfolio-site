@@ -23,7 +23,7 @@ function App() {
         <ProjectCard
           title="Stock Website"
           description="A responsive app to search and track live stock prices with real-time charting."
-          tech={["Flask", "Yahoo Finance API", "HTML", "CSS"]}
+          tech={["Flask", "Yahoo Finance API", "HTML", "CSS", "SQLAlchemy"]}
           link="https://github.com/aatmikbhagat/stock-website"
         />
         <ProjectCard

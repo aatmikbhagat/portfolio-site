@@ -17,7 +17,7 @@ export default function ProjectCard({ title, description, tech = [], link }) {
             rel="noopener noreferrer"
             className="text-blue-300 underline hover:text-blue-500"
           >
-            View Code →
+            GitHub →
           </a>
         )}
       </div>
