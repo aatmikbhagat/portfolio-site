@@ -9,7 +9,7 @@ export default function Certifications({ children }) {
   const prev = () => setActive((prev) => (prev - 1 + cards.length) % cards.length);
 
   return (
-    <section id="certifications" className="py-20 bg-gray-900 text-white px-4">
+    <section id="certifications" className="py-20 bg-gray-800 text-white px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-12">Certifications</h2>
 
