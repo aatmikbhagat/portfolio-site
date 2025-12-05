@@ -15,8 +15,8 @@ export default function About() {
           <div>
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm Aatmik, a student and developer passionate about building elegant, responsive, and user-focused applications.
-              I love working with technologies such as React and Flask and always strive to create intuitive user experiences.
+              I'm Aatmik, a Computer Science student and developer from Wilfrid Laurier University. I am passionate about building responsive and user-focused applications. 
+              In the past I have worked with technologies such as Salesforce from my time at CIBC, as well as React and Flask from my personal projects.
             </p>
           </div>
         </div>
