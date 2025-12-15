@@ -18,7 +18,7 @@ const tech = [
 
 export default function KnownTechnologies() {
   return (
-    <section className="py-24 bg-bg">
+    <section id="technologies" className="py-24 bg-bg">
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Title */}

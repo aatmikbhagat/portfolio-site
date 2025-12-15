@@ -1,16 +1,25 @@
 export default function Navbar() {
   return (
-    <nav className="bg-black text-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-white">
-          <a href="#home"> Aatmik Bhagat</a>
-        </div>
-        <div className="flex space-x-8">
-          <a href="#home" className="hover:text-blue-400">Home</a>
-          <a href="#about" className="hover:text-blue-400">About</a>
-          <a href="#projects" className="hover:text-blue-400">Projects</a>
-          <a href="#work" className="hover:text-blue-400">Work</a>
-          <a href="#certifications" className="hover:text-blue-400">Certifications</a>
+    <nav className="sticky top-0 z-50 backdrop-blur bg-black/60 border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <a
+          href="#home"
+          className="text-xl font-semibold tracking-wide text-white"
+        >
+          Aatmik Bhagat
+        </a>
+
+        <div className="flex space-x-8 text-sm font-medium">
+          {["Home", "About", "Projects", "Work", "Certifications", "Technologies"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="text-gray-300 hover:text-white transition relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all hover:after:w-full"
+            >
+              {item}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
