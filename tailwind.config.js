@@ -18,6 +18,13 @@ module.exports = {
         'fade-in-up': 'fade-in-up 0.4s ease-out',
         'fade-in': 'fade-in 0.4s ease-out',
       },
+      colors: {
+        gb: "#09090b",
+        card: "#18181b",
+        border: "#27272a",
+        text: "#f4f4f5",
+        muted: "#a1a1aa",
+      },
     },
   },
   plugins: [
