@@ -7,6 +7,8 @@ import WorkTabs from './components/WorkTabs';
 import Certifications from './components/Certifications';
 import CertificationCard from './components/CertificationCard';
 import Skills from './components/Skills';
+import KnownTechnologies from './components/KnownTechnologies';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -62,7 +64,9 @@ function App() {
         />
         
       </Certifications>
+      <KnownTechnologies />
       <Skills />
+      <Footer />
     </div>
   );
 }
