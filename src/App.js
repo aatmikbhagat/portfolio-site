@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="text-white">
       <Navbar />
       <Hero />
       <About />
