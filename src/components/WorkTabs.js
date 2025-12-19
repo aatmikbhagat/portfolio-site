@@ -12,7 +12,7 @@ const jobs = [
     logo: cibcLogo,
     role: "Application/Software Developer",
     contractLen: "Co-op",
-    date : "Sept. 2025 - Present",
+    date : "Sept. 2025 - Dec. 2025",
     bullets: [
       "Collaborated with QA teams to evaluate and test AccelQ as a potential automation tool, serving as the primary developer supporting the research and hands-on testing to determine it's suitability for the development workflow.",
       "Developed and tested functionality using Salesforce's AgentForce AI, building a tool to automatically fetch user stories while leveraging AI-generated task guidance to improve developer productivity and workflow efficiency.",
@@ -74,56 +74,78 @@ export default function WorkTabs() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="work" className="bg-gray-900 text-white py-20 px-6">
+    <section id="work" className="py-24 bg-bg px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Work Experience</h2>
 
-        <div className="flex flex-col md:flex-row items-start gap-8">
-          <div className="md:w-1/3 flex flex-col gap-4">
+        <h2 className="text-4xl font-bold text-center mb-16">
+          <span className="bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
+            Work Experience
+          </span>
+        </h2>
+
+        <div className="flex flex-col md:flex-row gap-8">
+
+          <div className="md:w-1/3 space-y-3">
             {jobs.map((job, index) => (
               <button
                 key={job.id}
                 onClick={() => setActive(index)}
-                className={`text-left px-4 py-3 rounded-lg transition font-medium ${
-                  index === active
-                    ? "bg-blue-700 text-white"
-                    : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-                }`}
+                className={`w-full text-left rounded-xl px-4 py-3 transition
+                  border ${
+                    index === active
+                      ? "bg-card border-indigo-500/50 shadow-[0_0_25px_rgba(99,102,241,0.2)]"
+                      : "bg-card border-border hover:border-indigo-500/30"
+                  }`}
               >
-                {job.role} <br />
-                <div className="flex items-center gap-3">
-                  <span className="text-sm text-gray-400">{job.company}</span>
-                  {job.logo && <img 
-                    src={job.logo}
-                    alt={'${job.company} Logo'}
-                    className="w-6 h-6 md:w-6 md:h-6 ml-auto"
-                  />}
+                <p className="font-medium text-sm">{job.role}</p>
+
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-xs text-muted">{job.company}</span>
+                  {job.logo && (
+                    <img
+                      src={job.logo}
+                      alt={`${job.company} logo`}
+                      className="w-5 h-5 ml-auto object-contain"
+                    />
+                  )}
                 </div>
-                
               </button>
             ))}
           </div>
 
           <div
             key={jobs[active].id}
-            className="md:w-2/3 bg-gray-800 p-6 rounded-lg transition-all duration-500 ease-in-out animate-fade-in-up"
-            >
-            <div className="flex items-center gap-3">
-              <h3 className="text-2xl font-bold mb-1">{jobs[active].role}</h3>
-              {jobs[active].logo && <img
-                src={jobs[active].logo}
-                alt={'${jobs[active].company} Logo'}
-                className="w-6 h-6 md:w-9 md: h-9 ml-auto"
-                />}
+            className="md:w-2/3 bg-card border border-border rounded-2xl p-6
+                       animate-fade-in-up"
+          >
+            <div className="flex items-center gap-3 mb-1">
+              <h3 className="text-2xl font-semibold">
+                {jobs[active].role}
+              </h3>
+
+              {jobs[active].logo && (
+                <img
+                  src={jobs[active].logo}
+                  alt={`${jobs[active].company} logo`}
+                  className="w-7 h-7 ml-auto object-contain"
+                />
+              )}
             </div>
-            <p className="text-blue-400 mb-2">{jobs[active].company}</p>
-            <p className="text-sm text-gray-400 mb-4">{jobs[active].date}</p>
-            <ul className="list-disc pl-5 space-y-2 text-gray-300">
+
+            <p className="text-indigo-400 font-medium">
+              {jobs[active].company}
+            </p>
+            <p className="text-sm text-muted mb-4">
+              {jobs[active].date}
+            </p>
+
+            <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
               {jobs[active].bullets.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
             </ul>
           </div>
+
         </div>
       </div>
     </section>
