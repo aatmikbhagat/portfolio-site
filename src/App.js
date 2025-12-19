@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import ProjectCard from './components/ProjectCard';
 import About from "./components/About"
+import PersonalGallery from './components/PersonalGallery';
 import WorkTabs from './components/WorkTabs';
 import Certifications from './components/Certifications';
 import CertificationCard from './components/CertificationCard';
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <PersonalGallery />
       <Projects>
         <ProjectCard
           title="Personal Portfolio"
