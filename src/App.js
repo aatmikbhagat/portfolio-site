@@ -37,8 +37,8 @@ function App() {
           tech={["React", "MongoDB", "TypeScript", "Axios", "Node.js", "CORS"]}
           link="https://github.com/aatmikbhagat/finance-tracker"
         />
-      </Projects>
       <WorkTabs />
+      </Projects>
       <Certifications>
         <CertificationCard
         title="Databricks Accredited Generative AI Fundamentals"
