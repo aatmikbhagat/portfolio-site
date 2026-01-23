@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import img1 from '../assets/images/Personal Images/Image 1.png'
@@ -14,16 +14,8 @@ export default function PersonalGallery() {
     const [direction, setDirection] = useState('next');
     const [isAnimating, setIsAnimating] = useState(false);
     const timeoutRef = useRef(null);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        goToSlide((active + 1) % images.length, 'next');
-      }, 5000);
-  
-      return () => clearInterval(interval);
-    }, [active, images.length, goToSlide]);
 
-    const goToSlide = (index, dir) => {
+    const goToSlide = useCallback((index, dir) => {
       if (isAnimating) return;
       setDirection(dir);
       setIsAnimating(true);
@@ -33,7 +25,15 @@ export default function PersonalGallery() {
       timeoutRef.current = setTimeout(() => {
         setIsAnimating(false);
       }, 500);
-    };
+    }, [isAnimating]);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        goToSlide((active + 1) % images.length, 'next');
+      }, 5000);
+  
+      return () => clearInterval(interval);
+    }, [active, images.length, goToSlide]);
   
     const next = () => goToSlide((active + 1) % images.length, 'next');
     const prev = () => goToSlide((active - 1 + images.length) % images.length, 'prev');
