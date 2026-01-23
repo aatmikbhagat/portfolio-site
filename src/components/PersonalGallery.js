@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import img1 from '../assets/images/Personal Images/Image 1.png'
@@ -11,18 +11,32 @@ import img6 from '../assets/images/Personal Images/Image 6.png'
 export default function PersonalGallery() {
     const images = [img1, img2, img3, img4, img5, img6];
     const [active, setActive] = useState(0);
+    const [direction, setDirection] = useState('next');
+    const [isAnimating, setIsAnimating] = useState(false);
+    const timeoutRef = useRef(null);
   
     useEffect(() => {
       const interval = setInterval(() => {
-        setActive((prev) => (prev + 1) % images.length);
+        goToSlide((active + 1) % images.length, 'next');
       }, 5000);
   
       return () => clearInterval(interval);
-    }, [images.length]);
+    }, [active, images.length]);
+
+    const goToSlide = (index, dir) => {
+      if (isAnimating) return;
+      setDirection(dir);
+      setIsAnimating(true);
+      setActive(index);
+      
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      timeoutRef.current = setTimeout(() => {
+        setIsAnimating(false);
+      }, 500);
+    };
   
-    const next = () => setActive((prev) => (prev + 1) % images.length);
-    const prev = () =>
-      setActive((prev) => (prev - 1 + images.length) % images.length);
+    const next = () => goToSlide((active + 1) % images.length, 'next');
+    const prev = () => goToSlide((active - 1 + images.length) % images.length, 'prev');
   
     return (
       <section className="py-24 bg-bg px-4">
@@ -34,13 +48,26 @@ export default function PersonalGallery() {
             </span>
           </h2>
   
-          <div className="relative overflow-hidden rounded-2xl shadow-xl bg-bg flex items-center justify-center">
-            <img
-                src={images[active]}
-                alt="Personal moment"
-                className="
-                h-[480px] w-auto max-w-full object-contain transition-all duration-700 ease-in-out"
-            />
+          <div className="relative overflow-hidden rounded-2xl shadow-xl bg-bg flex items-center justify-center h-[480px]">
+            <div className="relative w-full h-full flex items-center justify-center">
+              {images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Personal moment ${index + 1}`}
+                  className={`
+                    absolute h-[480px] w-auto max-w-full object-contain
+                    transition-all duration-500 ease-in-out
+                    ${index === active 
+                      ? 'opacity-100 translate-x-0 scale-100' 
+                      : direction === 'next'
+                        ? 'opacity-0 translate-x-full scale-95'
+                        : 'opacity-0 -translate-x-full scale-95'
+                    }
+                  `}
+                />
+              ))}
+            </div>
   
             <button
               onClick={prev}
@@ -61,11 +88,11 @@ export default function PersonalGallery() {
             {images.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setActive(index)}
-                className={`w-3 h-3 rounded-full transition ${
+                onClick={() => goToSlide(index, index > active ? 'next' : 'prev')}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === active
-                    ? "bg-indigo-500 scale-110"
-                    : "bg-gray-500 hover:bg-gray-400"
+                    ? "bg-indigo-500 scale-125"
+                    : "bg-gray-500 hover:bg-gray-400 hover:scale-110"
                 }`}
               />
             ))}
