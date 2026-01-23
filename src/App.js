@@ -18,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <PersonalGallery />
+      <WorkTabs />
       <Projects>
         <ProjectCard
           title="Personal Portfolio"
@@ -37,7 +38,6 @@ function App() {
           tech={["React", "MongoDB", "TypeScript", "Axios", "Node.js", "CORS"]}
           link="https://github.com/aatmikbhagat/finance-tracker"
         />
-      <WorkTabs />
       </Projects>
       <Certifications>
         <CertificationCard
