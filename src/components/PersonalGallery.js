@@ -21,7 +21,7 @@ export default function PersonalGallery() {
       }, 5000);
   
       return () => clearInterval(interval);
-    }, [active, images.length]);
+    }, [active, images.length, goToSlide]);
 
     const goToSlide = (index, dir) => {
       if (isAnimating) return;
