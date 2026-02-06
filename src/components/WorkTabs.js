@@ -64,8 +64,7 @@ const jobs = [
     date: "Oct. 2019 - Jun. 2022",
     bullets: [
         "Maintained open communication with parents, teachers, and administrators to discuss student progress and address individual needs",
-        "Supported classroom success through collaboration on curriculum design, project development, assessments, and grading",
-        "Fostered a safe and engaging learning environment, encouraging student development and active participation"
+        "Supported student learning and progress through structured problem-solving and individualized instruction"
     ]
   }
 ];

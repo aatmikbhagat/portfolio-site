@@ -1,4 +1,3 @@
-
 export default function Projects({ children }) {
   return (
     <section id="projects" className="py-24 bg-bg px-4">
