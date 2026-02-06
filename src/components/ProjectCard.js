@@ -23,4 +23,4 @@ export default function ProjectCard({ title, description, tech = [], link }) {
         )}
       </div>
     );
-  }
+  } 
