@@ -26,10 +26,9 @@ export default function About() {
               <br /> 
               I've worked with technologies like {" "} 
               <span className="text-indigo-400">Salesforce</span> during my time at
-              CIBC, and{" "}
+              CIBC, as well as{" "}
               <span className="text-indigo-400">React</span> and{" "}
-              <span className="text-indigo-400">Flask</span> through personal
-              projects.
+              <span className="text-indigo-400">Flask</span> through my personal projects.
             </p>
           </div>
         </div>
