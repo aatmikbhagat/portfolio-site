@@ -14,9 +14,10 @@ const jobs = [
     contractLen: "Co-op",
     date : "Sept. 2025 - Dec. 2025",
     bullets: [
-      "Collaborated with QA teams to evaluate and test AccelQ as a potential automation tool, serving as the primary developer supporting the research and hands-on testing to determine it's suitability for the development workflow.",
-      "Developed and tested functionality using Salesforce's AgentForce AI, building a tool to automatically fetch user stories while leveraging AI-generated task guidance to improve developer productivity and workflow efficiency.",
-      "Researched and assessed SonarQube as a code-quality solution, providing recommendations on how it could enhance code reviews on how it could enhance code reviews, improve maintainability, and strengthen development practices across the team."
+      "Developed Salesforce components supporting internal enterprise workflows and system enhancements across multiple teams",
+      "Evaluated AccelQ with QA Developers to assess automated testing capabilities and integration into development workflows",
+      "Built AI-assisted automation using Salesforce Agentforce and PowerShell to retrieve JIRA user stories via REST APIs",
+      "Restructured Salesforce deployment documentation in Confluence, improving clarity for developers"
     ]
   },
   {
@@ -27,9 +28,9 @@ const jobs = [
     contractLen: "",
     date: "Sept. 2024 – Aug. 2025",
     bullets: [
-      "Worked in a team to create and maintain LCIC website",
-      "Streamlined communication between front-end and back-end systems to ensure real-time updates of event planning calendars",
-      "Enhanced user experience by providing accurate and timely information for effective event scheduling and coordination"
+      "Developed backend services including API handling, data flow design, and server-side logic for club applications",
+      "Optimized database schemas and queries to improve performance and reliability for dynamic event scheduling systems",
+      "Collaborated in a Git-based environment to debug issues, test features, and integrate backend services with frontend components"
     ]
   },
   {
@@ -39,9 +40,9 @@ const jobs = [
     role: "Field Service Technician",
     date: "Jun. 2023 – Aug. 2024",
     bullets: [
-        "Cleaned residential and commercial windows, delivering streak-free results with industry-standard tools",
-        "Provided excellent customer service, addressing client requests and completing tasks on schedule with high attention to detail",
-        "Maintained equipment and supplies to ensure quality and efficiency on each job"
+      "Installed and maintained equipment in fast-paced environments while meeting service standards and client expectations",
+      "Coordinated time-sensitive tasks with team members to efficiently allocate on-site resources and daily operations",
+      "Performed routine safety checks and equipment inspections to ensure reliable performance and minimize on-site risk"
     ]
   },
   {
@@ -51,9 +52,8 @@ const jobs = [
     role: "Customer Sales Representative",
     date: "Jun. 2022 - Sept. 2022",
     bullets: [
-        "Learned to identify customer needs or desires to recommend the appropriate product or service",
-        "Worked with colleagues to resolve customer complaints",
-        "Stocked and maintained shelves of merchandise"
+        "Assisted customers in a high-volume retail environment by resolving concerns and supporting daily store operations",
+        "Maintained accurate inventory organization and stock management practices to support efficient retail workflows"
     ]
   },
   {
@@ -63,7 +63,7 @@ const jobs = [
     role: "Assistant Teacher",
     date: "Oct. 2019 - Jun. 2022",
     bullets: [
-        "Maintained open communication with parents, teachers, and administrators to discuss student progress and address individual needs",
+        "Guided students through complex mathematical concepts by adapting explanations to suit diverse learning styles",
         "Supported student learning and progress through structured problem-solving and individualized instruction"
     ]
   }
@@ -143,6 +143,7 @@ export default function WorkTabs() {
                 <li key={i}>{point}</li>
               ))}
             </ul>
+
           </div>
 
         </div>
