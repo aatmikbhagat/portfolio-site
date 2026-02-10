@@ -11,7 +11,7 @@ export default function Navbar() {
         </a>
 
         <div className="flex space-x-8 text-sm font-medium">
-          {["Home", "About", "Projects", "Work", "Certifications", "Technologies"].map((item) => (
+          {["Home", "About", "Work", "Projects", "Certifications", "Technologies"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
