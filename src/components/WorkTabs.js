@@ -3,9 +3,20 @@ import cibcLogo from '../assets/images/Company Logos/CIBC Logo.png';
 import farmBoyLogo from '../assets/images/Company Logos/Farm Boy.png';
 import somLogo from '../assets/images/Company Logos/SoM Logo.png';
 import cybersecLogo from '../assets/images/Company Logos/CyberSec Logo.png';
+import manulifeLogo from '../assets/images/Company Logos/Manulife Logo.png';
 
 
 const jobs = [
+  {
+    id: 0,
+    company: "Manulife",
+    logo: manulifeLogo,
+    role: "Technology Audit Analyst",
+    contractLen: "Co-op",
+    date : "Incoming Summer 2026",
+    bullets: [
+    ]
+  },
   {
     id: 0,
     company: "CIBC",
