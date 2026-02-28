@@ -17,8 +17,7 @@ export default function Hero() {
       </h1>
 
       <p className="text-lg md:text-xl text-muted max-w-xl mb-8">
-        I’m a student and web developer focused on building elegant, fast, and
-        accessible web applications.
+        I build applications and enjoy applying data analysis to solve real-world problems
       </p>
 
       <div className="flex gap-4 flex-wrap justify-center">
