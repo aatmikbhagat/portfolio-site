@@ -10,6 +10,7 @@ import CertificationCard from './components/CertificationCard';
 import Skills from './components/Skills';
 import KnownTechnologies from './components/KnownTechnologies';
 import Footer from './components/Footer';
+import WebRing from './components/WebRing';
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
       </Certifications>
       <KnownTechnologies />
       <Skills />
+      <WebRing />
       <Footer />
     </div>
   );
