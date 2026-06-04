@@ -22,6 +22,12 @@ function App() {
       <WorkTabs />
       <Projects>
         <ProjectCard
+          title="Net Trace"
+          description="A graph-based fraud detection system that identifies suspicious accounts by analyzing transaction networks instead of individual transactions."
+          tech={["Python", "PyTorch", "GraphSAGE", "scikit-learn", "Pandas", "Numpy", "Streamlit", "SQL"]}
+          link="https://github.com/shervin31/NetTrace"
+        ></ProjectCard>
+        <ProjectCard
           title="Personal Portfolio"
           description="This portfolio website, designed with Tailwind and React."
           tech={["React", "JavaScript", "Tailwind CSS"]}
