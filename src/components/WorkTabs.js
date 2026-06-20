@@ -9,12 +9,25 @@ import manulifeLogo from '../assets/images/Company Logos/Manulife Logo.png';
 const jobs = [
   {
     id: 0,
+    company: "Manulife" ,
+    logo: manulifeLogo,
+    role: "Financial Analyst",
+    contractLen: "Co-op",
+    date : "Incoming Fall 2026",
+    bullets: {}
+  },
+  {
+    id: 0,
     company: "Manulife",
     logo: manulifeLogo,
     role: "Technology Audit Analyst",
     contractLen: "Co-op",
-    date : "Incoming Summer 2026",
+    date : "May 2026 - Current",
     bullets: [
+      "Leading development of an audit workflow automation platform using Microsoft Copilot Studio across enterprise audit teams",
+      "Managing testing, bug fixes, and user feedback cycles while coordinating adoption across cross-functional teams",
+      "Developing AI-assisted workflow automation to reduce manual audit effort and improve process efficiency across teams",
+      "Collaborating with business and technical stakeholders to refine requirements and support scalable automation solutions"
     ]
   },
   {
