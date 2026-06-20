@@ -9,7 +9,7 @@ import manulifeLogo from '../assets/images/Company Logos/Manulife Logo.png';
 const jobs = [
   {
     id: 0,
-    company: "Manulife" ,
+    company: "Manulife",
     logo: manulifeLogo,
     role: "Financial Analyst",
     contractLen: "Co-op",
