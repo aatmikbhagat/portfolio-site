@@ -14,10 +14,10 @@ const jobs = [
     role: "Financial Analyst",
     contractLen: "Co-op",
     date : "Incoming Fall 2026",
-    bullets: {}
+    bullets: []
   },
   {
-    id: 0,
+    id: 1,
     company: "Manulife",
     logo: manulifeLogo,
     role: "Technology Audit Analyst",
@@ -31,7 +31,7 @@ const jobs = [
     ]
   },
   {
-    id: 0,
+    id: 2,
     company: "CIBC",
     logo: cibcLogo,
     role: "Application/Software Developer",
@@ -45,7 +45,7 @@ const jobs = [
     ]
   },
   {
-    id: 1,
+    id: 3,
     company: "Laurier CyberSecurity",
     logo: cybersecLogo,
     role: "Project Developer",
@@ -55,29 +55,6 @@ const jobs = [
       "Developed backend services including API handling, data flow design, and server-side logic for club applications",
       "Optimized database schemas and queries to improve performance and reliability for dynamic event scheduling systems",
       "Collaborated in a Git-based environment to debug issues, test features, and integrate backend services with frontend components"
-    ]
-  },
-  {
-    id: 2,
-    company: "SoakNScrub",
-    logo: null,
-    role: "Field Service Technician",
-    date: "Jun. 2023 – Aug. 2024",
-    bullets: [
-      "Installed and maintained equipment in fast-paced environments while meeting service standards and client expectations",
-      "Coordinated time-sensitive tasks with team members to efficiently allocate on-site resources and daily operations",
-      "Performed routine safety checks and equipment inspections to ensure reliable performance and minimize on-site risk"
-    ]
-  },
-  {
-    id: 3,
-    company: "Farm Boy Inc.",
-    logo: farmBoyLogo,
-    role: "Customer Sales Representative",
-    date: "Jun. 2022 - Sept. 2022",
-    bullets: [
-        "Assisted customers in a high-volume retail environment by resolving concerns and supporting daily store operations",
-        "Maintained accurate inventory organization and stock management practices to support efficient retail workflows"
     ]
   },
   {
