@@ -1,6 +1,5 @@
 import { useState } from "react";
 import cibcLogo from '../assets/images/Company Logos/CIBC Logo.png';
-import farmBoyLogo from '../assets/images/Company Logos/Farm Boy.png';
 import somLogo from '../assets/images/Company Logos/SoM Logo.png';
 import cybersecLogo from '../assets/images/Company Logos/CyberSec Logo.png';
 import manulifeLogo from '../assets/images/Company Logos/Manulife Logo.png';
