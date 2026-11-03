@@ -3,23 +3,44 @@ import cibcLogo from '../assets/images/Company Logos/CIBC Logo.png';
 import somLogo from '../assets/images/Company Logos/SoM Logo.png';
 import cybersecLogo from '../assets/images/Company Logos/CyberSec Logo.png';
 import manulifeLogo from '../assets/images/Company Logos/Manulife Logo.png';
+import TikTokLogo from '../assets/images/Company Logos/TikTok Logo.png';
 
 
 const jobs = [
   {
     id: 0,
-    company: "Manulife",
-    logo: manulifeLogo,
-    role: "Financial Analyst",
-    contractLen: "Co-op",
-    date : "Incoming Fall 2026",
-    bullets: []
+    company: "TikTok",
+    logo: TikTokLogo,
+    role: "Digital Content Creator",
+    contractLen: "",
+    date : "June 2026 - Current",
+    bullets: [
+      "Run TikTok and Instagram football accounts, scripting, filming, and editing short-form content",
+      "Produce weekly videos on matches and transfer news using CapCut, building a consistent posting schedule",
+      "Track engagement and audience analytics to test formats, hooks, and posting times that improve reach",
+      "Grow a Toronto-based football community through comments, collaborations, and timely trend-driven content"
+    ]
+
   },
   {
     id: 1,
     company: "Manulife",
     logo: manulifeLogo,
-    role: "Technology Audit Analyst",
+    role: "Financial Analyst",
+    contractLen: "Co-op",
+    date : "Sept. 2026 - Current",
+    bullets: [
+      "Reconcile account balances across financial systems using Excel, investigating discrepancies and validating financial data",
+      "Build automated workflows and templates to streamline recurring reconciliation and reporting, reducing manual effort",
+      "Analyze large datasets to detect anomalies, flag exceptions, and trace root causes of recurring data quality issues",
+      "Collaborate with Finance and Technology teams on process improvements that strengthen data quality and reconciliation controls"
+    ]
+  },
+  {
+    id: 2,
+    company: "Manulife",
+    logo: manulifeLogo,
+    role: "Technology Analyst",
     contractLen: "Co-op",
     date : "May 2026 - Current",
     bullets: [
@@ -30,7 +51,7 @@ const jobs = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     company: "CIBC",
     logo: cibcLogo,
     role: "Application/Software Developer",
@@ -44,7 +65,7 @@ const jobs = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     company: "Laurier CyberSecurity",
     logo: cybersecLogo,
     role: "Project Developer",
@@ -57,7 +78,7 @@ const jobs = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     company: "Spirit of Math Inc.",
     logo: somLogo,
     role: "Assistant Teacher",
